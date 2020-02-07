@@ -1,0 +1,12 @@
+#Application Name
+spring:
+  application:
+    name: demo-service     # This is the name for the remote configuration file
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG-SERVER-SERVICE
+      fail-fast: true
+      #uri: ${SPRING_CONFIG_URI:http://localhost:8888}  #where the config-service is running
+      #overrideSystemProperties: true
